@@ -9,6 +9,8 @@
         body {
             font-family: Arial, sans-serif;
             background-color: #EDF2F4;
+            margin: 0;
+            padding: 0;
         }
         header {
             background-color: #2B2D42;
@@ -26,29 +28,20 @@
         }
         #main-banner {
             background: url('https://baconmockup.com/1200/500') no-repeat center center/cover;
-            height: 500px;
+            height: 100vh;
             color: white;
-            text-align: center;
             display: flex;
             align-items: center;
             justify-content: center;
+            text-align: center;
         }
         #main-banner h1 {
             font-size: 3em;
             background-color: rgba(0, 0, 0, 0.5);
             padding: 10px;
         }
-        .section {
-            padding: 40px 20px;
-        }
-        .section h2 {
-            margin-bottom: 20px;
-        }
-        footer {
-            background-color: #2B2D42;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
+        .buttons {
+            margin-top: 20px;
         }
         .btn-custom {
             color: white;
@@ -56,12 +49,35 @@
             border: none;
             padding: 10px 20px;
             text-decoration: none;
+            margin: 10px;
         }
         .btn-custom:hover {
             background-color: #D90429;
         }
+        .btn-outline-custom {
+            color: #EF233C;
+            border: 2px solid #EF233C;
+            padding: 10px 20px;
+            margin: 10px;
+        }
+        .btn-outline-custom:hover {
+            background-color: #EF233C;
+            color: white;
+        }
+        footer {
+            background-color: #2B2D42;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
         .nav-link.active {
             background-color: #8D99AE;
+        }
+        .personal-details {
+            background-color: #ffffff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
         }
     </style>
 </head>
@@ -80,7 +96,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
+                        <a class="nav-link active" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="experience.html">Experience</a>
@@ -104,18 +120,27 @@
     <section id="main-banner">
         <div class="container">
             <h1>Visionary Leader in Product Innovation and Digital Transformation</h1>
-            <a href="about.html" class="btn btn-custom mt-4">Learn More</a>
+            <div class="buttons">
+                <a href="hire-me.html" class="btn btn-custom">Hire Me</a>
+                <a href="path_to_adam_resume.pdf" class="btn btn-outline-custom" download>Download Resume</a>
+            </div>
         </div>
     </section>
     <div class="container">
-        <section id="about" class="section">
+        <section class="section">
             <h2>About Me</h2>
             <div class="row">
                 <div class="col-md-6">
                     <img src="https://baconmockup.com/600/400" class="img-fluid mb-4" alt="Placeholder Image">
                 </div>
                 <div class="col-md-6">
-                    <p>Adam M. Root, a distinguished product management executive, possesses a B.S. in Mass Communications from Oklahoma Christian University and is pursuing a Master's in Digital Media Design at Harvard University. With over 15 years of experience, he has excelled in senior roles at Neighborly, Toptal, FieldPulse, Real Geeks, Zen Media, Tricent Capital, and Respondology. Root's published works in Forbes, Entrepreneur, and other esteemed publications underscore his expertise in digital transformation, product innovation, and venture capital.</p>
+                    <p>Adam M. Root is a distinguished product management executive with over 15 years of experience. He holds a B.S. in Mass Communications from Oklahoma Christian University and is pursuing a Master's in Digital Media Design at Harvard University. Adam has excelled in senior roles at Neighborly, Toptal, FieldPulse, Real Geeks, Zen Media, Tricent Capital, and Respondology. His published works in Forbes, Entrepreneur, and other esteemed publications underscore his expertise in digital transformation, product innovation, and venture capital.</p>
+                    <div class="personal-details">
+                        <h5>Personal Details</h5>
+                        <p><strong>Email:</strong> adam.m.root@gmail.com</p>
+                        <p><strong>Location:</strong> Dallas, TX</p>
+                        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/adammroot" target="_blank">linkedin.com/in/adammroot</a></p>
+                    </div>
                 </div>
             </div>
         </section>
