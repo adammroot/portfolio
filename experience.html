@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adam M. Root - Resume</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #EDF2F4;
+        }
+        header {
+            background-color: #2B2D42;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #8D99AE;
+        }
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: #EF233C;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+        .timeline-item {
+            padding: 20px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+        }
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: -17px;
+            background-color: white;
+            border: 4px solid #EF233C;
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        .timeline-item-left {
+            left: 0;
+        }
+        .timeline-item-right {
+            left: 50%;
+        }
+        .timeline-item-right::after {
+            left: -16px;
+        }
+        .timeline-item-content {
+            padding: 20px;
+            background-color: white;
+            position: relative;
+            border-radius: 6px;
+        }
+        .timeline-item-content h4 {
+            margin-top: 0;
+        }
+        footer {
+            background-color: #2B2D42;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .btn-custom {
+            color: white;
+            background-color: #EF233C;
+            border: none;
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+        .btn-custom:hover {
+            background-color: #D90429;
+        }
+        .nav-link.active {
+            background-color: #8D99AE;
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-dark text-white">
+        <div class="container">
+            <h1>Adam M. Root - Professional Portfolio</h1>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="experience.html">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="publications.html">Publications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="skills.html">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hire-me.html">Why Hire Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <section class="timeline">
+            <div class="timeline-item timeline-item-left">
+                <div class="timeline-item-content">
+                    <h4>VP of Product & UX at Neighborly</h4>
+                    <p>April 2024 – Present</p>
+                    <p>Lead the development of AI-powered features, optimizing franchisee operations by reducing inspection times by 33%. Implemented drone technology for autonomous home inspections.</p>
+                </div>
+            </div>
+            <div class="timeline-item timeline-item-right">
+                <div class="timeline-item-content">
+                    <h4>VP of Product at Toptal</h4>
+                    <p>Jan 2022 – April 2024</p>
+                    <p>Drove digital innovation for enterprise clients, boosting revenue and operational efficiency. Developed AI-driven marketing solutions and CRM systems.</p>
+                </div>
+            </div>
+            <div class="timeline-item timeline-item-left">
+                <div class="timeline-item-content">
+                    <h4>VP of Product at FieldPulse</h4>
+                    <p>Jan 2019 – Dec 2021</p>
+                    <p>Crafted workforce management strategies, achieving a 1,376% increase in payment MRR and a 59% reduction in churn.</p>
+                </div>
+            </div>
+            <div class="timeline-item timeline-item-right">
+                <div class="timeline-item-content">
+                    <h4>VP of Marketing & Product at Real Geeks</h4>
+                    <p>Jun 2018 – Dec 2018</p>
+                    <p>Managed substantial advertising budgets, resulting in a $20M+ increase in annual recurring revenue (ARR). Integrated real-time data for increased ARR.</p>
+                </div>
+            </div>
+            <div class="timeline-item timeline-item-left">
+                <div class="timeline-item-content">
+                    <h4>Chief Operating Officer at Zen Media</h4>
+                    <p>Sep 2017 – May 2018</p>
+                    <p>Led operational efforts, enhancing team size and gross margin significantly. Developed strategies for major clients, achieving high-profile media and marketing successes.</p>
+                </div>
+            </div>
+            <div class="timeline-item timeline-item-right">
+                <div class="timeline-item-content">
+                    <h4>General Partner, VP of Product Management at Tricent Capital</h4>
+                    <p>Jun 2016 – Sep 2017</p>
+                    <p>Created predictive tools for startup investments, achieving a 200% ROI on portfolio companies. Mentored executive teams of portfolio companies.</p>
+                </div>
+            </div>
+            <div class="timeline-item timeline-item-left">
+                <div class="timeline-item-content">
+                    <h4>Co-founder, Chief Product Officer at Respondology</h4>
+                    <p>Nov 2014 – May 2016</p>
+                    <p>Managed product development, implemented international NPS systems, and significantly improved customer satisfaction and engagement.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Adam M. Root. All rights reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
