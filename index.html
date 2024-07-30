@@ -84,7 +84,8 @@
             text-align: center;
         }
         .typewriter-text {
-            display: inline-block;
+            display: inline;
+            color: #D90429;
             overflow: hidden;
             white-space: nowrap;
             border-right: 0.15em solid #2B2D42;
@@ -141,11 +142,9 @@
             <div class="row">
                 <div class="col-md-6">
                     <h1>Hi, My name is Adam Root</h1>
-                    <section class="typewriter">
-                        <div class="container">
-                            <div class="typewriter-text">I am a seasoned Product Management Executive.</div>
-                        </div>
-                    </section>
+                    <div class="typewriter">
+                        <span>I am a </span><span class="typewriter-text">seasoned Product Management Executive.</span>
+                    </div>
                     <div class="buttons">
                         <a href="hire-me.html" class="btn btn-custom">Hire Me</a>
                         <a href="adam_resume.pdf" class="btn btn-outline-custom" download>Download Resume</a>
@@ -166,6 +165,35 @@
     <footer>
         <p>&copy; 2024 Adam M. Root. All rights reserved.</p>
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const texts = [
+                "seasoned Product Management Executive.",
+                "Digital Innovation Expert.",
+                "Revenue Growth Strategist.",
+                "Accomplished Entrepreneur."
+            ];
+            let index = 0;
+            let charIndex = 0;
+            const typewriterText = document.querySelector(".typewriter-text");
+
+            function typeWriter() {
+                if (charIndex < texts[index].length) {
+                    typewriterText.textContent += texts[index].charAt(charIndex);
+                    charIndex++;
+                    setTimeout(typeWriter, 100);
+                } else {
+                    setTimeout(() => {
+                        typewriterText.textContent = '';
+                        charIndex = 0;
+                        index = (index + 1) % texts.length;
+                        typeWriter();
+                    }, 2000);
+                }
+            }
+            typeWriter();
+        });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
