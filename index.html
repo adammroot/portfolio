@@ -176,15 +176,22 @@
                 "I am an Accomplished Entrepreneur."
             ];
             let index = 0;
+            let charIndex = 0;
             const typewriterText = document.querySelector(".typewriter-text");
-
+    
             function typeWriter() {
-                typewriterText.innerHTML = texts[index];
-                index++;
-                if (index >= texts.length) {
-                    index = 0;
+                if (charIndex < texts[index].length) {
+                    typewriterText.textContent += texts[index].charAt(charIndex);
+                    charIndex++;
+                    setTimeout(typeWriter, 100);
+                } else {
+                    setTimeout(() => {
+                        typewriterText.textContent = '';
+                        charIndex = 0;
+                        index = (index + 1) % texts.length;
+                        typeWriter();
+                    }, 2000);
                 }
-                setTimeout(typeWriter, 4000); // Time interval before next text appears
             }
             typeWriter();
         });
